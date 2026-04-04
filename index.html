@@ -3,235 +3,542 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Santhosh Prathik Kasam | Data Scientist Portfolio</title>
-  <meta
-    name="description"
-    content="Portfolio of Santhosh Prathik Kasam - Data Scientist, Data Engineer, ML Engineer, and AI-focused analyst."
-  />
+  <title>Santhosh Prathik Kasam · Analytics & AI Engineer</title>
+  <meta name="description" content="Portfolio of Santhosh Prathik Kasam — Analytics Engineer with 3+ years building data pipelines, dashboards, ML systems, and LLM-powered tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="app.js"></script>
 </head>
 <body>
-  <div class="aurora aurora-1" aria-hidden="true"></div>
-  <div class="aurora aurora-2" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
 
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-orb orb-3" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- NAV -->
   <header class="topbar">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">KSK</a>
-      <nav class="nav">
-        <a href="#home">Home</a>
+    <div class="nav-inner">
+      <a class="brand" href="#home"><span class="brand-mono">SPK</span></a>
+      <nav class="nav" id="main-nav">
         <a href="#about">About</a>
-        <a href="#focus">Focus</a>
-        <a href="#projects">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact" class="btn btn-outline">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button class="hamburger" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero container">
-      <div class="intro reveal">
-        <p class="eyebrow">Chicago, IL · Data Analyst • Data Engineer • ML Engineer • AI Engineer</p>
-        <h1>
-          Building data systems that uncover insights,
-          automate decisions, and ship intelligent products.
-        </h1>
-        <p class="lead">
-          I’m <strong>Santhosh Prathik Kasam</strong>, a data scientist with production
-          delivery experience in analytics, pipelines, machine learning, and generative AI.
-        </p>
-        <div class="actions">
-          <a href="#projects" class="btn">See Projects</a>
-          <a href="Kasam Santhosh Prathik Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="eyebrow reveal">Chicago, IL &nbsp;·&nbsp; Open to full-time roles</p>
+          <h1 class="reveal">
+            <span class="serif-italic">Turning data into</span><br>
+            decisions, pipelines<br>
+            <span class="serif-italic">& intelligent systems.</span>
+          </h1>
+          <p class="hero-lead reveal">
+            I'm <strong>Santhosh Prathik Kasam</strong> — Analytics & AI Engineer with 3+ years building production-grade data systems, BI platforms, and LLM-powered tools across fintech and research.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="Santhosh_Prathik_Kasam_Resume.pdf" class="btn-ghost" download>Download Resume</a>
+          </div>
         </div>
-      </div>
-      <aside class="stat-board reveal">
-        <h2>Data Signature</h2>
-        <p><span>Domain:</span> Product Analytics, Research Ops, ML & AI Systems</p>
-        <p><span>Current:</span> MS in Data Science, UIC</p>
-        <p><span>Scale:</span> 5M+ rows/month processed in internal workflows</p>
-        <p><span>Delivery:</span> production features, alerts, and reporting pipelines</p>
-      </aside>
-    </section>
-
-    <section id="about" class="section section-wide container reveal">
-      <div class="panel">
-        <h2>About</h2>
-        <p>
-          I enjoy converting messy raw data into dependable products. My focus is end-to-end:
-          defining signals, building reliable pipelines, engineering experimentation workflows,
-          and deploying ML + AI solutions with practical evaluation and impact.
-        </p>
-        <p>
-          I thrive when teams need clarity under uncertainty — whether it is a KPI model,
-          operational reporting tool, or a retrieval-based AI feature.
-        </p>
-      </div>
-      <div class="panel mini-panel">
-        <h3>Core Orientation</h3>
-        <ul>
-          <li>Interpret business problems, map them to data questions.</li>
-          <li>Build scalable, observable, and maintainable solutions.</li>
-          <li>Deliver outputs that non-technical teams can act on quickly.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="focus" class="section container">
-      <div class="section-head reveal">
-        <h2>Creative Focus Areas</h2>
-      </div>
-      <div class="focus-grid">
-        <article class="focus-card reveal">
-          <span class="focus-emoji">📈</span>
-          <h3>Data Analyst</h3>
-          <p>Design and interpret metrics, cohorts, conversion funnels, and experiment outputs that drive decisions.</p>
-        </article>
-        <article class="focus-card reveal">
-          <span class="focus-emoji">🧱</span>
-          <h3>Data Engineer</h3>
-          <p>Craft ETL/ELT, query models, and scheduled orchestration so analytics and ML teams work on trusted data.</p>
-        </article>
-        <article class="focus-card reveal">
-          <span class="focus-emoji">🧪</span>
-          <h3>ML Engineer</h3>
-          <p>Ship feature engineering and model pipelines with monitoring, retraining logic, and quality checkpoints.</p>
-        </article>
-        <article class="focus-card reveal">
-          <span class="focus-emoji">🧠</span>
-          <h3>AI Engineer</h3>
-          <p>Build RAG and LLM-native tools with grounding, citations, and controlled behavior for real users.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section container">
-      <div class="section-head reveal">
-        <h2>Projects</h2>
-        <p>Selected work across analytics, data infrastructure, and AI systems.</p>
-      </div>
-      <div class="filter-tabs">
-        <button data-tag="all" class="filter-pill active">All</button>
-        <button data-tag="analyst" class="filter-pill">Analytics</button>
-        <button data-tag="engineer" class="filter-pill">Data Engineering</button>
-        <button data-tag="ml" class="filter-pill">ML</button>
-        <button data-tag="ai" class="filter-pill">AI</button>
-      </div>
-      <div class="project-grid">
-        <article class="project-card reveal" data-tags="analyst">
-          <h3>Investor Reporting Dashboard (MIS)</h3>
-          <p>Designed 200+ business-metric dashboard in Tableau to enable founder-level visibility on product, usage, and growth.</p>
-          <ul>
-            <li>Cohort and conversion analysis across user segments.</li>
-            <li>Automated anomaly detection and alerting to Slack/Email.</li>
-          </ul>
-          <div class="project-tags">
-            <span>Tableau</span><span>Analytics</span><span>SQL</span>
+        <aside class="hero-card reveal">
+          <div class="hc-row">
+            <span class="hc-label">Currently</span>
+            <span class="hc-val">MS Data Science · UIC · GPA 4.0</span>
           </div>
-        </article>
-        <article class="project-card reveal" data-tags="engineer">
-          <h3>Self-Serve Analytics Platform</h3>
-          <p>Built a query scheduling and data-asset management product to reduce manual BI/ops overhead for teams.</p>
-          <ul>
-            <li>Airflow DAG auto-generation for scheduled SQL jobs.</li>
-            <li>Python-based asset transfer automation for Google Workspace + BigQuery.</li>
-          </ul>
-          <div class="project-tags">
-            <span>Airflow</span><span>BigQuery</span><span>Python</span>
+          <div class="hc-divider"></div>
+          <div class="hc-row">
+            <span class="hc-label">Experience</span>
+            <span class="hc-val">3+ years · Groww (Fintech) + UIC Research</span>
           </div>
-        </article>
-        <article class="project-card reveal" data-tags="analyst ai">
-          <h3>Research Analytics Website for UIC</h3>
-          <p>Built centralized Tableau-backed portal for proposals, grants, and expenditures tracking for university leadership.</p>
-          <ul>
-            <li>Developed natural-language-to-SQL assistant for faculty/admin reporting.</li>
-            <li>Monthly reporting automation for grant and spending trend analysis.</li>
-          </ul>
-          <div class="project-tags">
-            <span>Tableau</span><span>NLP</span><span>SQL</span>
+          <div class="hc-divider"></div>
+          <div class="hc-row">
+            <span class="hc-label">Focus</span>
+            <span class="hc-val">Analytics · Data Eng · ML · GenAI</span>
           </div>
-        </article>
-        <article class="project-card reveal" data-tags="ml ai">
-          <h3>Production-Grade RAG System</h3>
-          <p>Built end-to-end document ingestion + retrieval + generation pipeline with citation grounding and quality controls.</p>
-          <ul>
-            <li>Hybrid BM25 + semantic search with re-ranking.</li>
-            <li>Automated QA evaluation and answer-accuracy tracking.</li>
-          </ul>
-          <div class="project-tags">
-            <span>RAG</span><span>LangChain</span><span>ChromaDB</span>
+          <div class="hc-divider"></div>
+          <div class="hc-row">
+            <span class="hc-label">Scale</span>
+            <span class="hc-val">200+ metrics · 2,500+ queries · 10k+ docs</span>
           </div>
-        </article>
+          <div class="hc-divider"></div>
+          <div class="hc-row">
+            <span class="hc-label">Status</span>
+            <span class="hc-val hc-available"><span class="dot"></span>Available May 2026</span>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="skills" class="section container">
-      <div class="section-head reveal">
-        <h2>Skill Stack</h2>
-      </div>
-      <div class="skills-wrap">
-        <article class="panel-slim reveal">
-          <h3>Programming</h3>
-          <p>Python, SQL, Java</p>
-        </article>
-        <article class="panel-slim reveal">
-          <h3>Data Engineering</h3>
-          <p>ETL Pipelines, Modeling, Warehousing, Query Optimization, Airflow, Orchestration</p>
-        </article>
-        <article class="panel-slim reveal">
-          <h3>ML & AI</h3>
-          <p>Feature Engineering, Evaluation, Deployment, RAG, LangChain, LangGraph</p>
-        </article>
-        <article class="panel-slim reveal">
-          <h3>Databases &amp; Platforms</h3>
-          <p>PostgreSQL, MySQL, BigQuery, Trino, ChromaDB, Vector Search</p>
-        </article>
-        <article class="panel-slim reveal">
-          <h3>Analytics Tools</h3>
-          <p>Tableau, Power BI, Looker, Streamlit, Dash</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="section container">
-      <div class="section-head reveal">
-        <h2>Education</h2>
-      </div>
-      <div class="edu-grid">
-        <article class="panel reveal">
-          <h3>University of Illinois at Chicago</h3>
-          <p>Masters in Data Science — GPA: 4.0/4.0</p>
-          <p>Jan 2025 - Present</p>
-        </article>
-        <article class="panel reveal">
-          <h3>National Institute of Technology, Rourkela</h3>
-          <p>BTech in Mechanical Engineering with Honours — GPA: 8.07/10</p>
-          <p>Jul 2019 - May 2023</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section container">
-      <div class="contact-panel reveal">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <a href="mailto:skasa@uic.edu">skasa@uic.edu</a>
-          <a href="tel:+13312305217">+1 331-230-5217</a>
-          <a href="#" aria-label="Portfolio link">Portfolio</a>
-          <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
-          <a href="#" aria-label="GitHub profile">GitHub</a>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-inner">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="section-label">About</p>
+            <h2>I build the full stack of data — from raw tables to decisions.</h2>
+            <p class="body-muted">
+              My work spans the entire data lifecycle: defining the right metrics, building reliable pipelines, engineering ML systems, and deploying AI tools that non-technical teams can actually use. I've shipped production analytics infrastructure, internal tooling used by 60+ analysts, and RAG-based AI assistants in both fintech and academic research settings.
+            </p>
+            <p class="body-muted">
+              I care about clarity, observability, and building things that stay reliable after you're done building them.
+            </p>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat-item">
+              <span class="stat-num">200+</span>
+              <span class="stat-desc">Business metrics tracked in a single investor-grade dashboard</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2,500+</span>
+              <span class="stat-desc">Scheduled SQL queries migrated from BigQuery to Trino</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">40%</span>
+              <span class="stat-desc">Reduction in BigQuery slot utilization via query optimization</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">60+</span>
+              <span class="stat-desc">Analysts supported with internal self-serve tooling</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section">
+      <div class="section-inner">
+        <p class="section-label reveal">Expertise</p>
+        <h2 class="reveal">What I do</h2>
+        <div class="expertise-grid">
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>Product metrics, cohort analysis, conversion funnels, retention modeling, and investor-grade reporting dashboards.</p>
+            <div class="exp-tools">Tableau · SQL · BigQuery · Trino</div>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Data Engineering</h3>
+            <p>ETL/ELT pipelines, query optimization, orchestration, data modeling, and internal tooling that keeps analyst teams moving fast.</p>
+            <div class="exp-tools">Airflow · PySpark · Python · dbt</div>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M4.22 4.22l2.12 2.12m11.32 11.32 2.12 2.12M2 12h3m14 0h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+            </div>
+            <h3>Machine Learning</h3>
+            <p>Anomaly detection, feature engineering, model evaluation, and ML-powered automation integrated into production analytics pipelines.</p>
+            <div class="exp-tools">scikit-learn · MLflow · Python</div>
+          </div>
+          <div class="exp-card reveal">
+            <div class="exp-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636-.707.707M21 12h-1M4 12H3m3.343-5.657-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3>AI & GenAI Engineering</h3>
+            <p>RAG pipelines, LLM-powered query assistants, vector search, document intelligence, and grounded generation with source citations.</p>
+            <div class="exp-tools">LangChain · ChromaDB · OpenAI · RAG</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-inner">
+        <p class="section-label reveal">Experience</p>
+        <h2 class="reveal">Where I've worked</h2>
+        <div class="exp-timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <span class="tl-date">Jan 2025 — Present</span>
+              <span class="tl-tag tl-current">Current</span>
+            </div>
+            <div class="timeline-right">
+              <h3>Analytics Engineer & BI Developer</h3>
+              <p class="tl-company">University of Illinois at Chicago · Office of the Vice Chancellor for Research</p>
+              <ul class="tl-bullets">
+                <li>Built a centralized research analytics platform with Tableau dashboards tracking proposals, awards, and expenditures across 40+ colleges and 450+ departments.</li>
+                <li>Developed a Text-to-SQL RAG assistant using OpenAI APIs, enabling non-technical faculty and administrators to query institutional research data in plain English.</li>
+                <li>Designed and published the official UIC sponsored research web portal with embedded interactive dashboards.</li>
+                <li>Building a knowledge-base chatbot over 5,000–10,000 research proposal documents for intelligent PI-to-opportunity matching.</li>
+              </ul>
+              <div class="tl-stack">
+                <span>Tableau</span><span>SQL</span><span>Python</span><span>RAG</span><span>OpenAI</span><span>LangChain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-left">
+              <span class="tl-date">Jan 2023 — Dec 2024</span>
+            </div>
+            <div class="timeline-right">
+              <h3>Analytics Engineer</h3>
+              <p class="tl-company">Groww · Central Analytics Team · Bangalore, India</p>
+              <ul class="tl-bullets">
+                <li>Owned the org-wide MIS dashboard tracking 200+ business metrics across 7+ product verticals, consumed by founders and external investors monthly.</li>
+                <li>Engineered 5+ internal analytics tools (SQL scheduler, Slack alerting system, ownership transfer app) used by 60+ analysts across multiple product teams.</li>
+                <li>Led the full BigQuery-to-Trino migration of 2,500+ scheduled queries — zero analyst downtime — including lineage mapping, syntax conversion engine, and a self-serve translator UI.</li>
+                <li>Reduced BigQuery slot utilization by 40% through org-wide query analytics and an AI-powered optimization suggestion engine.</li>
+                <li>Built onboarding and CRM analytics for GrowNRI from scratch — including event schema design, multi-step funnel tracking, and campaign performance dashboards.</li>
+              </ul>
+              <div class="tl-stack">
+                <span>Tableau</span><span>BigQuery</span><span>Trino</span><span>Airflow</span><span>PySpark</span><span>Python</span><span>SQL</span><span>scikit-learn</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <p class="section-label reveal">Projects</p>
+        <h2 class="reveal">Selected work</h2>
+
+        <div class="filter-row reveal">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="analytics">Analytics</button>
+          <button class="pill" data-filter="engineering">Engineering</button>
+          <button class="pill" data-filter="ml">ML</button>
+          <button class="pill" data-filter="ai">AI / GenAI</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- MIS -->
+          <article class="proj-card reveal" data-tags="analytics ml">
+            <div class="proj-header">
+              <div class="proj-cat">Analytics · ML</div>
+              <div class="proj-company">Groww</div>
+            </div>
+            <h3>MIS Dashboard — Investor Reporting</h3>
+            <p>Organization-wide dashboard tracking 200+ business metrics across 7+ product verticals, consumed directly by founders, finance leadership, and external investors.</p>
+            <ul>
+              <li>Month-on-month transactions, DAU/MAU, revenue per user, repeat rates — across Mutual Funds, F&O, Credit, and more</li>
+              <li>Cohort retention analysis: MoM retention, transaction retention, activity retention</li>
+              <li>Automated QA pipeline with data lineage validation, production DB cross-checks, and ML-based anomaly detection (Isolation Forest)</li>
+              <li>Reduced monthly QA cycle from ~10 days to a largely automated process</li>
+            </ul>
+            <div class="proj-tags">
+              <span>Tableau</span><span>BigQuery</span><span>SQL</span><span>Python</span><span>scikit-learn</span>
+            </div>
+          </article>
+
+          <!-- BigQuery Migration -->
+          <article class="proj-card reveal" data-tags="engineering">
+            <div class="proj-header">
+              <div class="proj-cat">Data Engineering</div>
+              <div class="proj-company">Groww</div>
+            </div>
+            <h3>BigQuery → Trino Migration</h3>
+            <p>End-to-end migration of 2,500+ live scheduled queries from BigQuery to Trino — zero analyst downtime — driven by compliance requirements separating independently registered entities.</p>
+            <ul>
+              <li>Parsed all SQL queries to extract table dependencies and build a full lineage graph (L0/L1/L2 levels)</li>
+              <li>Built a regex-based BigQuery-to-Trino syntax converter with automatic table name remapping</li>
+              <li>Shipped a self-serve web UI where analysts paste a BigQuery query and get the Trino equivalent instantly</li>
+              <li>Sequenced migration by dependency level to ensure no query ran before its upstream tables were ready</li>
+            </ul>
+            <div class="proj-tags">
+              <span>Trino</span><span>BigQuery</span><span>Python</span><span>SQL Parsing</span><span>Regex</span>
+            </div>
+          </article>
+
+          <!-- Bricks SQL Scheduler -->
+          <article class="proj-card reveal" data-tags="engineering">
+            <div class="proj-header">
+              <div class="proj-cat">Internal Tooling · Data Engineering</div>
+              <div class="proj-company">Groww</div>
+            </div>
+            <h3>Bricks — SQL Query Scheduler</h3>
+            <p>Internal SQL scheduling platform replacing BigQuery's native scheduler, adding cron expressions, priority slot routing, multi-owner support, and Slack alerting.</p>
+            <ul>
+              <li>Priority slot isolation: jobs routed to dedicated BigQuery projects by priority tier — preventing ad hoc queries from starving scheduled jobs</li>
+              <li>Full cron expression support replacing BigQuery's drop-down frequency selection</li>
+              <li>Multi-owner and co-editor support, easy ownership transfer — eliminating single-owner lock-in</li>
+              <li>Slack failure alerts replacing email-only notifications</li>
+            </ul>
+            <div class="proj-tags">
+              <span>Airflow</span><span>BigQuery API</span><span>Python</span><span>Slack API</span>
+            </div>
+          </article>
+
+          <!-- BigQuery Optimization -->
+          <article class="proj-card reveal" data-tags="analytics engineering ml">
+            <div class="proj-header">
+              <div class="proj-cat">Analytics · AI</div>
+              <div class="proj-company">Groww</div>
+            </div>
+            <h3>BigQuery Optimization & Query Intelligence</h3>
+            <p>Org-wide BigQuery usage analytics system with AI-powered query optimization — reduced slot utilization by 40% across 60+ analysts.</p>
+            <ul>
+              <li>Analyzed 2,500+ scheduled and ad hoc queries: slot consumption by team, user, day-of-week, query type</li>
+              <li>Detected duplicate scheduled queries, redundant table updates, and abandoned schedules</li>
+              <li>Built a Python pipeline to parse queries, flag anti-patterns (SELECT *, wrong JOINs, redundant GROUP BY)</li>
+              <li>Integrated ChatGPT API to generate personalized optimization recommendations per query</li>
+            </ul>
+            <div class="proj-tags">
+              <span>BigQuery</span><span>Python</span><span>ChatGPT API</span><span>SQL</span>
+            </div>
+          </article>
+
+          <!-- Slack Alerts -->
+          <article class="proj-card reveal" data-tags="engineering analytics">
+            <div class="proj-header">
+              <div class="proj-cat">Internal Tooling</div>
+              <div class="proj-company">Groww</div>
+            </div>
+            <h3>DataPulse — SQL-Driven Slack Alert System</h3>
+            <p>Self-serve alerting platform enabling analysts, PMs, and business teams to subscribe to automated metric updates and data quality checks delivered to Slack.</p>
+            <ul>
+              <li>User writes SQL, selects output format and schedule — Airflow executes and delivers to Slack</li>
+              <li>Output formats: text, tagged mentions, images, CSV attachments, email</li>
+              <li>Use cases: daily metric digests, new user reports, duplicate/null checks on critical tables, threshold-based anomaly alerts</li>
+            </ul>
+            <div class="proj-tags">
+              <span>Airflow</span><span>BigQuery</span><span>Slack API</span><span>Python</span>
+            </div>
+          </article>
+
+          <!-- QA Dashboard -->
+          <article class="proj-card reveal" data-tags="analytics engineering">
+            <div class="proj-header">
+              <div class="proj-cat">Analytics · Data Engineering</div>
+              <div class="proj-company">Groww</div>
+            </div>
+            <h3>QA Analytics Dashboard</h3>
+            <p>Organization-wide QA analytics platform aggregating Jira data across all pods — enabling QA directors to view cross-team metrics impossible to see natively in Jira.</p>
+            <ul>
+              <li>Near-live Jira data pipeline (15-min refresh) via Python and PySpark</li>
+              <li>Three dashboard layers: org level, project/team level, individual assignee level</li>
+              <li>Tracked bug closure rates, TAT, TAT bridge alerts, production vs. pre-production issue splits</li>
+            </ul>
+            <div class="proj-tags">
+              <span>Tableau</span><span>PySpark</span><span>BigQuery</span><span>Jira API</span>
+            </div>
+          </article>
+
+          <!-- UIC Research -->
+          <article class="proj-card reveal" data-tags="analytics ai">
+            <div class="proj-header">
+              <div class="proj-cat">Analytics · AI</div>
+              <div class="proj-company">UIC</div>
+            </div>
+            <h3>Sponsored Research Analytics Platform</h3>
+            <p>Multi-level research analytics website tracking proposals, awards, and expenditure across sponsor hierarchies, colleges, and departments — published on the official UIC website.</p>
+            <ul>
+              <li>Three Tableau dashboards: proposals, awards, expenditure — with KPIs across 40+ colleges and 450+ departments</li>
+              <li>Five-level sponsor hierarchy (federal → NIH/NSF/DoD → sub-agency)</li>
+              <li>Built and published the full web portal integrating Tableau dashboards into official UIC web presence</li>
+            </ul>
+            <div class="proj-tags">
+              <span>Tableau</span><span>SQL</span><span>HTML/CSS</span>
+            </div>
+          </article>
+
+          <!-- Text to SQL -->
+          <article class="proj-card reveal" data-tags="ai">
+            <div class="proj-header">
+              <div class="proj-cat">AI / GenAI</div>
+              <div class="proj-company">UIC</div>
+            </div>
+            <h3>Text-to-SQL Research Query Assistant</h3>
+            <p>Natural language to SQL app enabling researchers, deans, and admins to query institutional data in plain English — with visualizations and CSV export.</p>
+            <ul>
+              <li>RAG layer indexes schema and metadata to route each question to the correct tables</li>
+              <li>Two-stage LLM pipeline: Stage 1 generates SQL, Stage 2 summarizes and formats results for non-technical users</li>
+              <li>Bar/pie chart visualization and downloadable CSV output</li>
+            </ul>
+            <div class="proj-tags">
+              <span>RAG</span><span>OpenAI API</span><span>SQL</span><span>Python</span>
+            </div>
+          </article>
+
+          <!-- RAG Chatbot -->
+          <article class="proj-card reveal" data-tags="ai ml">
+            <div class="proj-header">
+              <div class="proj-cat">AI / GenAI · Ongoing</div>
+              <div class="proj-company">UIC</div>
+            </div>
+            <h3>Research Knowledge Base Chatbot</h3>
+            <p>RAG-based chatbot over 5,000–10,000 research proposal and legal documents — enabling intelligent researcher-to-funding-opportunity matching across the university.</p>
+            <ul>
+              <li>Ingests and chunks multi-hundred-page proposal documents into a vector database with rich metadata tagging</li>
+              <li>Enables queries like "find PIs who worked on chronic kidney disease" or "identify researchers using electron microscopes"</li>
+              <li>Grounded responses with source citations, replacing manual phone calls and broadcast emails</li>
+            </ul>
+            <div class="proj-tags">
+              <span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span><span>Python</span>
+            </div>
+          </article>
+
+          <!-- Production RAG -->
+          <article class="proj-card reveal" data-tags="ai ml">
+            <div class="proj-header">
+              <div class="proj-cat">AI / GenAI · Personal Project</div>
+              <div class="proj-company">Personal</div>
+            </div>
+            <h3>Production-Grade RAG System</h3>
+            <p>Modular, production-grade retrieval-augmented generation system with hybrid search, re-ranking, and automated evaluation.</p>
+            <ul>
+              <li>Hybrid retrieval combining BM25 keyword search and semantic embeddings</li>
+              <li>Cross-encoder re-ranking for improved retrieval precision</li>
+              <li>Automated evaluation framework with 50+ curated test queries — 75–78% answer accuracy</li>
+              <li>Grounded responses with source citations, minimizing hallucinations</li>
+            </ul>
+            <div class="proj-tags">
+              <span>LangChain</span><span>ChromaDB</span><span>Sentence Transformers</span><span>Python</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-inner">
+        <p class="section-label reveal">Skills</p>
+        <h2 class="reveal">Tech stack</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h4>Languages</h4>
+            <div class="skill-chips">
+              <span>Python</span><span>SQL</span><span>Java</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Data Engineering</h4>
+            <div class="skill-chips">
+              <span>Airflow</span><span>PySpark</span><span>ETL/ELT</span><span>dbt</span><span>Data Modeling</span><span>Query Optimization</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Databases & Platforms</h4>
+            <div class="skill-chips">
+              <span>BigQuery</span><span>Trino</span><span>PostgreSQL</span><span>MySQL</span><span>ChromaDB</span><span>Vector Search</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>ML & AI</h4>
+            <div class="skill-chips">
+              <span>scikit-learn</span><span>RAG</span><span>LangChain</span><span>LangGraph</span><span>Sentence Transformers</span><span>MLflow</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Analytics & BI</h4>
+            <div class="skill-chips">
+              <span>Tableau</span><span>Power BI</span><span>Looker</span><span>Streamlit</span><span>Dash</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Tools & APIs</h4>
+            <div class="skill-chips">
+              <span>OpenAI API</span><span>REST APIs</span><span>Slack API</span><span>BigQuery API</span><span>Google Workspace API</span><span>Git</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Libraries</h4>
+            <div class="skill-chips">
+              <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-inner">
+        <p class="section-label reveal">Education</p>
+        <h2 class="reveal">Academic background</h2>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-top">
+              <span class="edu-badge current">Current</span>
+            </div>
+            <h3>University of Illinois at Chicago</h3>
+            <p class="edu-degree">Master of Science in Data Science</p>
+            <p class="edu-meta">Jan 2025 — Expected Dec 2026</p>
+            <p class="edu-gpa">GPA: 4.0 / 4.0</p>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-top">
+              <span class="edu-badge">2019 — 2023</span>
+            </div>
+            <h3>National Institute of Technology, Rourkela</h3>
+            <p class="edu-degree">B.Tech in Mechanical Engineering · Honours</p>
+            <p class="edu-meta">Jul 2019 — May 2023</p>
+            <p class="edu-gpa">GPA: 8.07 / 10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <div class="contact-wrap reveal">
+          <div class="contact-left">
+            <p class="section-label">Contact</p>
+            <h2>Let's work together.</h2>
+            <p class="body-muted">Open to full-time Analytics Engineering, Data Engineering, or ML/AI Engineering roles starting May 2026.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:skasa@uic.edu" class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              skasa@uic.edu
+            </a>
+            <a href="tel:+13312305217" class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              +1 (331) 230-5217
+            </a>
+            <a href="https://linkedin.com/in/santhosh-prathik" target="_blank" rel="noopener" class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/santhoshprathik" target="_blank" rel="noopener" class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Santhosh Prathik Kasam</p>
+    <div class="footer-inner">
+      <span class="footer-name">Santhosh Prathik Kasam</span>
+      <span class="footer-copy">© <span id="yr"></span> · Built from scratch</span>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

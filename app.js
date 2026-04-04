@@ -1,70 +1,57 @@
-const yearEl = document.querySelector('#year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+// Year
+document.getElementById('yr').textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver((entries) => {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  }
-}, { threshold: 0.14 });
-
-document.querySelectorAll('.reveal').forEach((el, i) => {
-  el.style.transitionDelay = `${Math.min(i * 60, 260)}ms`;
-  observer.observe(el);
-});
-
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
-
-menuBtn?.addEventListener('click', () => {
-  const open = nav?.classList.contains('open');
-  if (!open) {
-    nav?.classList.add('open');
-    nav.style.display = 'grid';
-    nav.style.position = 'fixed';
-    nav.style.top = '72px';
-    nav.style.left = '0';
-    nav.style.right = '0';
-    nav.style.background = 'rgba(8, 18, 36, 0.98)';
-    nav.style.padding = '1rem';
-    nav.style.gridTemplateColumns = '1fr';
-    nav.style.gap = '0.9rem';
-    nav.style.justifyItems = 'center';
-    nav.style.borderBottom = '1px solid rgba(110, 145, 235, 0.35)';
-    menuBtn.setAttribute('aria-expanded', 'true');
-  } else {
-    nav.classList.remove('open');
-    nav.style.display = 'none';
-    menuBtn.setAttribute('aria-expanded', 'false');
-  }
-});
-
-document.querySelectorAll('.nav a').forEach((link) => {
-  link.addEventListener('click', () => {
-    if (nav?.classList.contains('open')) {
-      nav.classList.remove('open');
-      nav.style.display = 'none';
-      menuBtn.setAttribute('aria-expanded', 'false');
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
     }
   });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+revealEls.forEach(el => io.observe(el));
+
+// Mobile nav
+const toggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('main-nav');
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
 });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open');
+  toggle.setAttribute('aria-expanded', false);
+}));
 
-const filterButtons = document.querySelectorAll('.filter-pill');
-const projects = document.querySelectorAll('.project-card');
+// Project filter
+const pills = document.querySelectorAll('.pill');
+const cards = document.querySelectorAll('.proj-card');
 
-filterButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const tag = btn.dataset.tag;
-    filterButtons.forEach((b) => {
-      b.classList.toggle('active', b === btn);
-      b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
-    });
-
-    projects.forEach((card) => {
-      const tags = card.dataset.tags?.split(' ') || [];
-      card.classList.toggle('hidden', tag !== 'all' && !tags.includes(tag));
+pills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    pills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const f = pill.dataset.filter;
+    cards.forEach(card => {
+      const tags = card.dataset.tags || '';
+      const show = f === 'all' || tags.includes(f);
+      card.classList.toggle('hidden', !show);
     });
   });
 });
+
+// Active nav highlight on scroll
+const sections = document.querySelectorAll('section[id], main[id]');
+const navLinks = document.querySelectorAll('.nav a');
+const scrollSpy = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active-link'));
+      const link = document.querySelector(`.nav a[href="#${e.target.id}"]`);
+      if (link) link.classList.add('active-link');
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+sections.forEach(s => scrollSpy.observe(s));
