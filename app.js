@@ -28,6 +28,7 @@ nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
 // Project filter
 const pills = document.querySelectorAll('.pill');
 const cards = document.querySelectorAll('.proj-card');
+const projectGroups = document.querySelectorAll('.project-group');
 
 pills.forEach(pill => {
   pill.addEventListener('click', () => {
@@ -38,6 +39,11 @@ pills.forEach(pill => {
       const tags = card.dataset.tags || '';
       const show = f === 'all' || tags.includes(f);
       card.classList.toggle('hidden', !show);
+    });
+
+    projectGroups.forEach(group => {
+      const visibleCards = group.querySelectorAll('.proj-card:not(.hidden)');
+      group.classList.toggle('hidden-group', visibleCards.length === 0);
     });
   });
 });

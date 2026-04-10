@@ -42,14 +42,10 @@
     <section id="home" class="hero">
       <div class="hero-inner">
         <div class="hero-left">
-          <p class="eyebrow reveal">Chicago, IL &nbsp;·&nbsp; Open to full-time roles</p>
-          <h1 class="reveal">
-            <span class="serif-italic">Turning data into</span><br>
-            decisions, pipelines<br>
-            <span class="serif-italic">& intelligent systems.</span>
-          </h1>
+          <p class="eyebrow reveal">Chicago, IL &nbsp;·&nbsp; Open to Summer 2026 internships</p>
+          <h1 class="reveal">Building reliable data, ML and AI products</h1>
           <p class="hero-lead reveal">
-            I'm <strong>Santhosh Prathik Kasam</strong> — Analytics & AI Engineer with 3+ years building production-grade data systems, BI platforms, and LLM-powered tools across fintech and research.
+            I'm <strong>Santhosh Prathik Kasam</strong>, an Analytics and AI Engineer with 3+ years of experience across fintech and research, working on dashboards, data systems, ML workflows, and AI applications.
           </p>
           <div class="hero-actions reveal">
             <a href="#projects" class="btn-primary">View Projects</a>
@@ -73,13 +69,8 @@
           </div>
           <div class="hc-divider"></div>
           <div class="hc-row">
-            <span class="hc-label">Scale</span>
-            <span class="hc-val">200+ metrics · 2,500+ queries · 10k+ docs</span>
-          </div>
-          <div class="hc-divider"></div>
-          <div class="hc-row">
             <span class="hc-label">Status</span>
-            <span class="hc-val hc-available"><span class="dot"></span>Available May 2026</span>
+            <span class="hc-val hc-available"><span class="dot"></span>Open to Summer 2026 internships</span>
           </div>
         </aside>
       </div>
@@ -91,31 +82,15 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p class="section-label">About</p>
-            <h2>I build the full stack of data — from raw tables to decisions.</h2>
             <p class="body-muted">
-              My work spans the entire data lifecycle: defining the right metrics, building reliable pipelines, engineering ML systems, and deploying AI tools that non-technical teams can actually use. I've shipped production analytics infrastructure, internal tooling used by 60+ analysts, and RAG-based AI assistants in both fintech and academic research settings.
+              I work across analytics, data engineering, machine learning, and AI applications. My focus is building systems that are useful in practice, not just technically interesting.
             </p>
             <p class="body-muted">
-              I care about clarity, observability, and building things that stay reliable after you're done building them.
+              At Groww, I worked on dashboards, internal analytics tools, and large-scale data infrastructure for fintech teams. At UIC, I build research analytics platforms and AI tools that help non-technical users work with complex data and documents.
             </p>
-          </div>
-          <div class="about-stats reveal">
-            <div class="stat-item">
-              <span class="stat-num">200+</span>
-              <span class="stat-desc">Business metrics tracked in a single investor-grade dashboard</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">2,500+</span>
-              <span class="stat-desc">Scheduled SQL queries migrated from BigQuery to Trino</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">40%</span>
-              <span class="stat-desc">Reduction in BigQuery slot utilization via query optimization</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-num">60+</span>
-              <span class="stat-desc">Analysts supported with internal self-serve tooling</span>
-            </div>
+            <p class="body-muted">
+              I care about clear metrics, reliable pipelines, and simple interfaces that make data easier to trust and use.
+            </p>
           </div>
         </div>
       </div>
@@ -222,199 +197,284 @@
 
         <div class="filter-row reveal">
           <button class="pill active" data-filter="all">All</button>
-          <button class="pill" data-filter="analytics">Analytics</button>
+          <button class="pill" data-filter="dashboarding">Dashboarding</button>
           <button class="pill" data-filter="engineering">Engineering</button>
           <button class="pill" data-filter="ml">ML</button>
           <button class="pill" data-filter="ai">AI / GenAI</button>
         </div>
 
-        <div class="projects-grid" id="projects-grid">
+        <div id="projects-grid">
+          <div class="project-group reveal">
+            <div class="project-group-head">
+              <p class="section-label">Groww</p>
+              <h3>Fintech analytics, dashboards, and internal infrastructure</h3>
+            </div>
+            <div class="projects-grid">
+              <article class="proj-card reveal" data-tags="ml">
+                <div class="proj-header">
+                  <div class="proj-cat">ML</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>MIS Dashboard — Investor Reporting</h3>
+                <p>Investor-grade reporting system tracking 200+ business metrics across 7+ product verticals, used by founders, finance leadership, and external investors as a source of truth.</p>
+                <ul>
+                  <li>Modeled monthly KPI layers for transactions, activity, revenue, and cohort retention across multiple fintech product lines.</li>
+                  <li>Built an automated QA pipeline with lineage validation, production cross-checks, and Isolation Forest anomaly detection.</li>
+                  <li>Reduced the monthly reporting QA cycle from about 10 days to a largely automated workflow without investor-facing metric errors.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>ML</span><span>Tableau</span><span>BigQuery</span><span>SQL</span><span>Python</span>
+                </div>
+              </article>
 
-          <!-- MIS -->
-          <article class="proj-card reveal" data-tags="analytics ml">
-            <div class="proj-header">
-              <div class="proj-cat">Analytics · ML</div>
-              <div class="proj-company">Groww</div>
-            </div>
-            <h3>MIS Dashboard — Investor Reporting</h3>
-            <p>Organization-wide dashboard tracking 200+ business metrics across 7+ product verticals, consumed directly by founders, finance leadership, and external investors.</p>
-            <ul>
-              <li>Month-on-month transactions, DAU/MAU, revenue per user, repeat rates — across Mutual Funds, F&O, Credit, and more</li>
-              <li>Cohort retention analysis: MoM retention, transaction retention, activity retention</li>
-              <li>Automated QA pipeline with data lineage validation, production DB cross-checks, and ML-based anomaly detection (Isolation Forest)</li>
-              <li>Reduced monthly QA cycle from ~10 days to a largely automated process</li>
-            </ul>
-            <div class="proj-tags">
-              <span>Tableau</span><span>BigQuery</span><span>SQL</span><span>Python</span><span>scikit-learn</span>
-            </div>
-          </article>
+              <article class="proj-card reveal" data-tags="engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Engineering</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>BigQuery → Trino Migration</h3>
+                <p>Large-scale query migration that moved 2,500+ live scheduled jobs from BigQuery to Trino with zero analyst downtime during a compliance-driven platform split.</p>
+                <ul>
+                  <li>Parsed 2,500+ SQL jobs to build dependency lineage and sequence migration waves safely by upstream table readiness.</li>
+                  <li>Built a BigQuery-to-Trino conversion engine with syntax translation and automatic table-name remapping.</li>
+                  <li>Shipped a self-serve translator UI and validated cutovers in parallel so analysts could keep working during the migration.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Engineering</span><span>Trino</span><span>BigQuery</span><span>Python</span><span>SQL Parsing</span><span>Regex</span>
+                </div>
+              </article>
 
-          <!-- BigQuery Migration -->
-          <article class="proj-card reveal" data-tags="engineering">
-            <div class="proj-header">
-              <div class="proj-cat">Data Engineering</div>
-              <div class="proj-company">Groww</div>
-            </div>
-            <h3>BigQuery → Trino Migration</h3>
-            <p>End-to-end migration of 2,500+ live scheduled queries from BigQuery to Trino — zero analyst downtime — driven by compliance requirements separating independently registered entities.</p>
-            <ul>
-              <li>Parsed all SQL queries to extract table dependencies and build a full lineage graph (L0/L1/L2 levels)</li>
-              <li>Built a regex-based BigQuery-to-Trino syntax converter with automatic table name remapping</li>
-              <li>Shipped a self-serve web UI where analysts paste a BigQuery query and get the Trino equivalent instantly</li>
-              <li>Sequenced migration by dependency level to ensure no query ran before its upstream tables were ready</li>
-            </ul>
-            <div class="proj-tags">
-              <span>Trino</span><span>BigQuery</span><span>Python</span><span>SQL Parsing</span><span>Regex</span>
-            </div>
-          </article>
+              <article class="proj-card reveal" data-tags="engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Engineering</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>Bricks — SQL Query Scheduler</h3>
+                <p>Internal scheduling platform that replaced BigQuery's limited native scheduler and became the standard workflow tool for 60+ analysts.</p>
+                <ul>
+                  <li>Added full cron scheduling, dynamic Airflow-backed execution, and priority-based routing across dedicated BigQuery projects.</li>
+                  <li>Designed multi-owner editing and one-click ownership transfer to remove single-owner operational bottlenecks.</li>
+                  <li>Integrated Slack failure alerts and retry handling so critical scheduled jobs were easier to monitor and recover.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Engineering</span><span>Airflow</span><span>BigQuery API</span><span>Python</span><span>Slack API</span>
+                </div>
+              </article>
 
-          <!-- Bricks SQL Scheduler -->
-          <article class="proj-card reveal" data-tags="engineering">
-            <div class="proj-header">
-              <div class="proj-cat">Internal Tooling · Data Engineering</div>
-              <div class="proj-company">Groww</div>
-            </div>
-            <h3>Bricks — SQL Query Scheduler</h3>
-            <p>Internal SQL scheduling platform replacing BigQuery's native scheduler, adding cron expressions, priority slot routing, multi-owner support, and Slack alerting.</p>
-            <ul>
-              <li>Priority slot isolation: jobs routed to dedicated BigQuery projects by priority tier — preventing ad hoc queries from starving scheduled jobs</li>
-              <li>Full cron expression support replacing BigQuery's drop-down frequency selection</li>
-              <li>Multi-owner and co-editor support, easy ownership transfer — eliminating single-owner lock-in</li>
-              <li>Slack failure alerts replacing email-only notifications</li>
-            </ul>
-            <div class="proj-tags">
-              <span>Airflow</span><span>BigQuery API</span><span>Python</span><span>Slack API</span>
-            </div>
-          </article>
+              <article class="proj-card reveal" data-tags="engineering ai">
+                <div class="proj-header">
+                  <div class="proj-cat">Engineering · AI</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>BigQuery Optimization & Query Intelligence</h3>
+                <p>Organization-wide query intelligence system that analyzed warehouse usage patterns and cut BigQuery slot utilization by 40% across a 60+ analyst team.</p>
+                <ul>
+                  <li>Used BigQuery INFORMATION_SCHEMA logs to profile slot usage by team, user, schedule type, and peak contention windows.</li>
+                  <li>Detected duplicate schedules, abandoned jobs, and SQL anti-patterns such as `SELECT *`, redundant grouping, and missing partition filters.</li>
+                  <li>Combined rule-based checks with ChatGPT-powered optimization suggestions to improve analyst query quality at scale.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Engineering</span><span>AI</span><span>BigQuery</span><span>Python</span><span>ChatGPT API</span><span>SQL</span>
+                </div>
+              </article>
 
-          <!-- BigQuery Optimization -->
-          <article class="proj-card reveal" data-tags="analytics engineering ml">
-            <div class="proj-header">
-              <div class="proj-cat">Analytics · AI</div>
-              <div class="proj-company">Groww</div>
-            </div>
-            <h3>BigQuery Optimization & Query Intelligence</h3>
-            <p>Org-wide BigQuery usage analytics system with AI-powered query optimization — reduced slot utilization by 40% across 60+ analysts.</p>
-            <ul>
-              <li>Analyzed 2,500+ scheduled and ad hoc queries: slot consumption by team, user, day-of-week, query type</li>
-              <li>Detected duplicate scheduled queries, redundant table updates, and abandoned schedules</li>
-              <li>Built a Python pipeline to parse queries, flag anti-patterns (SELECT *, wrong JOINs, redundant GROUP BY)</li>
-              <li>Integrated ChatGPT API to generate personalized optimization recommendations per query</li>
-            </ul>
-            <div class="proj-tags">
-              <span>BigQuery</span><span>Python</span><span>ChatGPT API</span><span>SQL</span>
-            </div>
-          </article>
+              <article class="proj-card reveal" data-tags="engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Engineering</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>SQL-Driven Slack Alert System</h3>
+                <p>Self-serve alerting platform that let analysts, PMs, and business teams subscribe to automated metric updates and data-quality checks without manual dashboard review.</p>
+                <ul>
+                  <li>Built a SQL-driven workflow where users define queries, schedules, and output formats while Airflow handles execution and delivery.</li>
+                  <li>Supported Slack messages, tagged alerts, charts, CSV attachments, and email for different stakeholder workflows.</li>
+                  <li>Used the platform for metric digests, anomaly alerts, compliance checks, and recurring data-quality monitoring across teams.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Engineering</span><span>Airflow</span><span>BigQuery</span><span>Slack API</span><span>Python</span>
+                </div>
+              </article>
 
-          <!-- Slack Alerts -->
-          <article class="proj-card reveal" data-tags="engineering analytics">
-            <div class="proj-header">
-              <div class="proj-cat">Internal Tooling</div>
-              <div class="proj-company">Groww</div>
-            </div>
-            <h3>DataPulse — SQL-Driven Slack Alert System</h3>
-            <p>Self-serve alerting platform enabling analysts, PMs, and business teams to subscribe to automated metric updates and data quality checks delivered to Slack.</p>
-            <ul>
-              <li>User writes SQL, selects output format and schedule — Airflow executes and delivers to Slack</li>
-              <li>Output formats: text, tagged mentions, images, CSV attachments, email</li>
-              <li>Use cases: daily metric digests, new user reports, duplicate/null checks on critical tables, threshold-based anomaly alerts</li>
-            </ul>
-            <div class="proj-tags">
-              <span>Airflow</span><span>BigQuery</span><span>Slack API</span><span>Python</span>
-            </div>
-          </article>
+              <article class="proj-card reveal" data-tags="dashboarding engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Dashboarding · Engineering</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>QA Analytics Dashboard</h3>
+                <p>Near-real-time QA analytics platform that unified Jira data across product pods and gave leadership the first org-wide view of testing health.</p>
+                <ul>
+                  <li>Built a Python and PySpark pipeline that ingested Jira ticket data every 15 minutes into a normalized BigQuery layer.</li>
+                  <li>Designed executive, team, and assignee-level dashboard views for issue volume, closure rate, turnaround time, and workload distribution.</li>
+                  <li>Introduced TAT Bridge alerts to surface SLA-risk tickets proactively instead of forcing directors to scan Jira manually.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Dashboarding</span><span>Engineering</span><span>Tableau</span><span>PySpark</span><span>BigQuery</span><span>Jira API</span>
+                </div>
+              </article>
 
-          <!-- QA Dashboard -->
-          <article class="proj-card reveal" data-tags="analytics engineering">
-            <div class="proj-header">
-              <div class="proj-cat">Analytics · Data Engineering</div>
-              <div class="proj-company">Groww</div>
+              <article class="proj-card reveal" data-tags="dashboarding engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Dashboarding · Engineering</div>
+                  <div class="proj-company">Groww</div>
+                </div>
+                <h3>Kubernetes Cost Optimization Dashboard</h3>
+                <p>Infrastructure analytics dashboard that attributed Kubernetes compute usage and cost down to individual microservices for the first time at Groww.</p>
+                <ul>
+                  <li>Ingested Kubernetes node and pod-level metrics, then joined time-series usage data back to individual microservices.</li>
+                  <li>Built a cost attribution model for CPU utilization, idle capacity, and over-provisioning across services and clusters.</li>
+                  <li>Helped DevOps and service owners identify high-cost workloads, right-size resource limits, and improve cluster efficiency.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Dashboarding</span><span>Engineering</span><span>Tableau</span><span>BigQuery</span><span>Python</span><span>Kubernetes Metrics API</span>
+                </div>
+              </article>
             </div>
-            <h3>QA Analytics Dashboard</h3>
-            <p>Organization-wide QA analytics platform aggregating Jira data across all pods — enabling QA directors to view cross-team metrics impossible to see natively in Jira.</p>
-            <ul>
-              <li>Near-live Jira data pipeline (15-min refresh) via Python and PySpark</li>
-              <li>Three dashboard layers: org level, project/team level, individual assignee level</li>
-              <li>Tracked bug closure rates, TAT, TAT bridge alerts, production vs. pre-production issue splits</li>
-            </ul>
-            <div class="proj-tags">
-              <span>Tableau</span><span>PySpark</span><span>BigQuery</span><span>Jira API</span>
-            </div>
-          </article>
+          </div>
 
-          <!-- UIC Research -->
-          <article class="proj-card reveal" data-tags="analytics ai">
-            <div class="proj-header">
-              <div class="proj-cat">Analytics · AI</div>
-              <div class="proj-company">UIC</div>
+          <div class="project-group reveal">
+            <div class="project-group-head">
+              <p class="section-label">UIC</p>
+              <h3>Research analytics platforms and applied AI tools</h3>
             </div>
-            <h3>Sponsored Research Analytics Platform</h3>
-            <p>Multi-level research analytics website tracking proposals, awards, and expenditure across sponsor hierarchies, colleges, and departments — published on the official UIC website.</p>
-            <ul>
-              <li>Three Tableau dashboards: proposals, awards, expenditure — with KPIs across 40+ colleges and 450+ departments</li>
-              <li>Five-level sponsor hierarchy (federal → NIH/NSF/DoD → sub-agency)</li>
-              <li>Built and published the full web portal integrating Tableau dashboards into official UIC web presence</li>
-            </ul>
-            <div class="proj-tags">
-              <span>Tableau</span><span>SQL</span><span>HTML/CSS</span>
-            </div>
-          </article>
+            <div class="projects-grid">
+              <article class="proj-card reveal" data-tags="engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Engineering</div>
+                  <div class="proj-company">UIC</div>
+                </div>
+                <h3>Sponsored Research Analytics Platform</h3>
+                <p>Official UIC research analytics portal that made proposal, award, and expenditure data self-serve across 40+ colleges and 450+ departments.</p>
+                <ul>
+                  <li>Built three Tableau dashboards covering proposals, awards, and expenditures with drill-downs from university to PI level.</li>
+                  <li>Modeled a five-level sponsor hierarchy to support meaningful analysis across federal agencies, sub-agencies, and funding programs.</li>
+                  <li>Designed and published the full web portal on the official UIC site, reducing repetitive ad hoc reporting requests.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Engineering</span><span>Tableau</span><span>SQL</span><span>HTML/CSS</span>
+                </div>
+              </article>
 
-          <!-- Text to SQL -->
-          <article class="proj-card reveal" data-tags="ai">
-            <div class="proj-header">
-              <div class="proj-cat">AI / GenAI</div>
-              <div class="proj-company">UIC</div>
-            </div>
-            <h3>Text-to-SQL Research Query Assistant</h3>
-            <p>Natural language to SQL app enabling researchers, deans, and admins to query institutional data in plain English — with visualizations and CSV export.</p>
-            <ul>
-              <li>RAG layer indexes schema and metadata to route each question to the correct tables</li>
-              <li>Two-stage LLM pipeline: Stage 1 generates SQL, Stage 2 summarizes and formats results for non-technical users</li>
-              <li>Bar/pie chart visualization and downloadable CSV output</li>
-            </ul>
-            <div class="proj-tags">
-              <span>RAG</span><span>OpenAI API</span><span>SQL</span><span>Python</span>
-            </div>
-          </article>
+              <article class="proj-card reveal" data-tags="ai">
+                <div class="proj-header">
+                  <div class="proj-cat">AI / GenAI</div>
+                  <div class="proj-company">UIC</div>
+                </div>
+                <h3>Text-to-SQL Research Query Assistant</h3>
+                <p>Natural-language analytics assistant that lets researchers and administrators query institutional research data in plain English instead of writing SQL.</p>
+                <ul>
+                  <li>Built a schema-aware RAG layer that uses metadata and table context to route questions to the right datasets.</li>
+                  <li>Implemented a two-stage LLM pipeline for SQL generation first, then business-friendly summarization of the results.</li>
+                  <li>Added visual outputs and CSV export so non-technical users could explore and reuse answers directly.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>AI</span><span>RAG</span><span>OpenAI API</span><span>SQL</span><span>Python</span>
+                </div>
+              </article>
 
-          <!-- RAG Chatbot -->
-          <article class="proj-card reveal" data-tags="ai ml">
-            <div class="proj-header">
-              <div class="proj-cat">AI / GenAI · Ongoing</div>
-              <div class="proj-company">UIC</div>
+              <article class="proj-card reveal" data-tags="ai ml">
+                <div class="proj-header">
+                  <div class="proj-cat">AI / GenAI · ML</div>
+                  <div class="proj-company">UIC</div>
+                </div>
+                <h3>Research Knowledge Base Chatbot</h3>
+                <p>RAG-based document intelligence system over 5,000–10,000 research documents, built to support researcher discovery, compliance Q&A, and funding-opportunity matching.</p>
+                <ul>
+                  <li>Designed an ingestion pipeline for long proposal and award documents with metadata extraction for PI, department, sponsor, and research domain.</li>
+                  <li>Combined semantic search, BM25-style retrieval, and reranking to improve answer quality across both conceptual and keyword-heavy queries.</li>
+                  <li>Returns grounded responses with citations for use cases like PI discovery, equipment matching, and sponsor-opportunity alignment.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>AI</span><span>ML</span><span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span>
+                </div>
+              </article>
             </div>
-            <h3>Research Knowledge Base Chatbot</h3>
-            <p>RAG-based chatbot over 5,000–10,000 research proposal and legal documents — enabling intelligent researcher-to-funding-opportunity matching across the university.</p>
-            <ul>
-              <li>Ingests and chunks multi-hundred-page proposal documents into a vector database with rich metadata tagging</li>
-              <li>Enables queries like "find PIs who worked on chronic kidney disease" or "identify researchers using electron microscopes"</li>
-              <li>Grounded responses with source citations, replacing manual phone calls and broadcast emails</li>
-            </ul>
-            <div class="proj-tags">
-              <span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span><span>Python</span>
-            </div>
-          </article>
+          </div>
 
-          <!-- Production RAG -->
-          <article class="proj-card reveal" data-tags="ai ml">
-            <div class="proj-header">
-              <div class="proj-cat">AI / GenAI · Personal Project</div>
-              <div class="proj-company">Personal</div>
+          <div class="project-group reveal">
+            <div class="project-group-head">
+              <p class="section-label">Personal</p>
+              <h3>Independent builds across retrieval, ML systems, and automation</h3>
             </div>
-            <h3>Production-Grade RAG System</h3>
-            <p>Modular, production-grade retrieval-augmented generation system with hybrid search, re-ranking, and automated evaluation.</p>
-            <ul>
-              <li>Hybrid retrieval combining BM25 keyword search and semantic embeddings</li>
-              <li>Cross-encoder re-ranking for improved retrieval precision</li>
-              <li>Automated evaluation framework with 50+ curated test queries — 75–78% answer accuracy</li>
-              <li>Grounded responses with source citations, minimizing hallucinations</li>
-            </ul>
-            <div class="proj-tags">
-              <span>LangChain</span><span>ChromaDB</span><span>Sentence Transformers</span><span>Python</span>
-            </div>
-          </article>
+            <div class="projects-grid">
+              <article class="proj-card reveal" data-tags="ai ml">
+                <div class="proj-header">
+                  <div class="proj-cat">AI / GenAI · ML</div>
+                  <div class="proj-company">Personal</div>
+                </div>
+                <h3>Production-Grade RAG System</h3>
+                <p>Independent RAG system built to explore production-grade retrieval, reranking, evaluation, and hallucination control beyond tutorial-level implementations.</p>
+                <ul>
+                  <li>Implemented hybrid retrieval with dense embeddings, BM25, and cross-encoder reranking for stronger top-k relevance.</li>
+                  <li>Built an automated evaluation framework with 50+ curated test queries to measure retrieval and answer quality.</li>
+                  <li>Reached 75 to 78 percent answer accuracy while improving keyword-heavy query performance and citation grounding.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>AI</span><span>ML</span><span>LangChain</span><span>ChromaDB</span><span>Sentence Transformers</span><span>Python</span>
+                </div>
+              </article>
 
+              <article class="proj-card reveal" data-tags="ml engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">ML · Engineering</div>
+                  <div class="proj-company">Personal</div>
+                </div>
+                <h3>Customer Churn Prediction ML System</h3>
+                <p>End-to-end churn prediction platform structured like a small production ML system rather than a notebook-only project, covering training, serving, monitoring, and drift detection.</p>
+                <ul>
+                  <li>Built reusable ingestion, validation, and preprocessing pipelines with Pandera and scikit-learn for consistent model training and inference.</li>
+                  <li>Trained and compared Logistic Regression, Random Forest, and XGBoost models with MLflow experiment tracking and model registry.</li>
+                  <li>Deployed a FastAPI prediction service with browser UI, serving-metrics dashboard, and drift detection logic that can trigger retraining.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>ML</span><span>Engineering</span><span>FastAPI</span><span>MLflow</span><span>XGBoost</span><span>scikit-learn</span>
+                </div>
+                <div class="proj-links">
+                  <a href="https://github.com/santhoshprathik1530/churn-ml-system" target="_blank" rel="noopener">Code</a>
+                  <a href="https://huggingface.co/spaces/santhoshprathik15/churn-ml-system" target="_blank" rel="noopener">Live Demo</a>
+                </div>
+              </article>
+
+              <article class="proj-card reveal" data-tags="ai">
+                <div class="proj-header">
+                  <div class="proj-cat">AI / GenAI</div>
+                  <div class="proj-company">Personal</div>
+                </div>
+                <h3>RAG Document QA</h3>
+                <p>Interview-focused RAG application that ingests URLs or uploaded documents and lets users compare chunking, retrieval, reranking, and grounded answer quality side by side.</p>
+                <ul>
+                  <li>Implemented fixed, recursive, and semantic chunking strategies to show how chunk granularity changes downstream retrieval quality.</li>
+                  <li>Compared dense, BM25, hybrid, and cross-encoder reranked retrieval with metadata-aware filtering and persistent vector indexing.</li>
+                  <li>Built a Streamlit evaluation workflow that surfaces retrieved chunks, grounded answers, and heuristic quality metrics per pipeline.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>AI</span><span>Streamlit</span><span>BM25</span><span>FAISS</span><span>Cross-Encoder</span><span>RAG</span>
+                </div>
+                <div class="proj-links">
+                  <a href="https://github.com/santhoshprathik1530/rag-document-qa" target="_blank" rel="noopener">Code</a>
+                </div>
+              </article>
+
+              <article class="proj-card reveal" data-tags="engineering">
+                <div class="proj-header">
+                  <div class="proj-cat">Engineering</div>
+                  <div class="proj-company">Personal</div>
+                </div>
+                <h3>Cold Email Automation Tracker</h3>
+                <p>End-to-end outbound workflow that discovers recruiter contacts, sends personalized emails via Gmail API, and tracks opens and link clicks in a live engagement dashboard.</p>
+                <ul>
+                  <li>Integrated Apollo API for recruiter discovery and built a unified Streamlit app to search, import, send, and monitor outreach from one interface.</li>
+                  <li>Added direct Gmail API sending with personalized HTML templates, tracking IDs, and OAuth-based account connection.</li>
+                  <li>Implemented Supabase-backed click and open tracking with Edge Functions, real-time dashboard metrics, and follow-up flagging for non-responsive contacts.</li>
+                </ul>
+                <div class="proj-tags">
+                  <span>Engineering</span><span>Streamlit</span><span>Gmail API</span><span>Supabase</span><span>Apollo API</span><span>Edge Functions</span>
+                </div>
+                <div class="proj-links">
+                  <a href="https://github.com/santhoshprathik1530/cold-emails-automation" target="_blank" rel="noopener">Code</a>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -517,7 +577,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.61-.61a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
               +1 (331) 230-5217
             </a>
-            <a href="https://linkedin.com/in/santhosh-prathik" target="_blank" rel="noopener" class="contact-link">
+            <a href="https://www.linkedin.com/in/kasamsanthoshprathik/" target="_blank" rel="noopener" class="contact-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
               LinkedIn
             </a>
